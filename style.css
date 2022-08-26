@@ -1,0 +1,130 @@
+*, *::after ,*::before{
+   
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    height: 100%;
+    
+    
+}
+body{
+    background-color: #000000;
+    overflow-x:hidden;
+    box-sizing: border-box;
+    max-width: auto;
+    max-width: auto;
+    position: relative;
+  
+    text-align: center;
+    
+}
+span{
+    text-align: center;
+    
+    font-size: 32px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    color: #fff;
+
+}
+small{
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius:  40px ;
+    
+    background-color: black;
+    color: #fff;
+}
+small:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 300ms;
+}
+.game{
+    
+    width: 600px;
+    height: 192px;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 100px;
+    background-color: #fcfafa;
+    border: 15px ridge #fcfafa;
+
+}
+#naruto{
+    width: 50px;
+    height: 50px;
+    background-image: url(images/naruto-run.gif);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+
+    
+    
+}
+button{
+    margin-top: 30px;
+    font-size: 70px;
+    background-color: #000000;
+    padding: 0;
+    border: 5px solid #060;
+    
+   
+    
+
+}
+button:active{
+    background-color: #fff;
+    
+}
+
+.jump{
+    animation: jump 300ms linear;
+}
+@keyframes jump {
+    0%{
+        top:150px;
+    }
+    30%{
+        top: 130px;
+    }
+    50%{
+        top: 80px;
+
+    }
+    80%{
+        top:130px;
+    }
+    100%{
+        top: 150px
+    }
+    
+}
+
+#cactus{
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top:100px;
+    left: 550px;
+    background-image: url(images/cactus.png);
+    background-size: 20px 40px;
+    animation: move 1.7s both infinite linear;
+}
+
+@keyframes move {
+    0%{
+        left: 1050px;
+    }
+    40%{
+        left: 550px;
+    }
+    100%{
+        left: -30px;
+    }
+    
+}
